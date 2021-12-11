@@ -1,0 +1,54 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "huyphan1",
+    "password": "celxs36e2a"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "huyphan",
+    "password": "celxs36e2a"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3MzA5ZDQ3MDg2NTQ3Y2UxYmExZDciLCJpYXQiOjE2Mzg5NzAzMDJ9.XbK1w4keZt6xomrZ-A4vA8Byg41QOAO4kUT7T4Zbac4
+
+{
+    "title": "832",
+    "description": "832",
+    "url": "instagram.com",
+    "status": "LEARNING"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3MzA5ZDQ3MDg2NTQ3Y2UxYmExZDciLCJpYXQiOjE2Mzg0NTA4MTh9.lt_S-UNJakIQXxUIAbrrglugvqCEqnroT7m7T_kvnIo
+
+###
+
+PUT http://localhost:5000/api/posts/61a88a17a8d47791bc6059d4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3MzA5ZDQ3MDg2NTQ3Y2UxYmExZDciLCJpYXQiOjE2Mzg0NTA4MTh9.lt_S-UNJakIQXxUIAbrrglugvqCEqnroT7m7T_kvnIo
+
+{
+    "title": "839",
+    "description": "839",
+    "url": "839.com",
+    "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/61a88a17a8d47791bc6059d4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE3MzA5ZDQ3MDg2NTQ3Y2UxYmExZDciLCJpYXQiOjE2Mzg0NTA4MTh9.lt_S-UNJakIQXxUIAbrrglugvqCEqnroT7m7T_kvnIo
